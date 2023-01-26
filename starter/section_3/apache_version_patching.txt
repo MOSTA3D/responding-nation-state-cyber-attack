@@ -1,11 +1,16 @@
 #Provide the apache version and configuration lines to be changed 
 
 
-# Apache Version
+# Apache Version: Apache/2.4.7 (Ubuntu)
 
 
 
 # Configuration file change(Hint: the change has to be made in /etc/apache2/conf-enabled/security.conf)
 
+ServerSignature Off
 
+
+# For not sending the OS type also we can change the ServerTokens to Prod
+
+ServerTokens Prod
 

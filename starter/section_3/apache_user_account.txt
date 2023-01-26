@@ -3,5 +3,17 @@
 
 #Configuration lines:
 
+# file: /etc/apache2/envvars
+
+export APACHE_RUN_USER=apache-user
+export APACHE_RUN_GROUP=apache-group
+
+
+# then, it will be automatically setted in file: /etc/apache2/apache2.conf in the following arguments
+
+User ${APACHE_RUN_USER}
+Group ${APACHE_RUN_GROUP}
+
+
 
 
